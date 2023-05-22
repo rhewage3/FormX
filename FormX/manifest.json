@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "FormX",
+    "description": "Multiply any google form, any number of times",
+    "version": "1.0",
+    "permissions":["activeTab"],
+    
+
+    "content_scripts": [
+        {
+            "matches": ["https://docs.google.com/forms/*"],
+            "js": ["formx.js"]
+        }
+    ]
+
+    
+
+}
